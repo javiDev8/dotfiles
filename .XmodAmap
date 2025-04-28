@@ -1,0 +1,33 @@
+! switch Escape and Caps_Lock
+keycode 66 = Escape
+keycode 9 = Caps_Lock
+clear Lock
+
+keycode 113 = Mode_switch
+remove mod1 = Alt_R
+add mod3 = Alt_R
+keycode 25 = w W w W
+keycode 39 = s S s S
+keycode 38 = a A a aacute
+keycode 40 = d D d D
+
+! switch braces and brackets
+keycode 34 = braceleft bracketleft
+keycode 35 = braceright bracketright
+
+keycode 111 = slash question questiondown question slash question slash question
+
+keycode 61 = Up
+keycode 135 = Down
+keycode 105 = Right
+
+! special chars
+keycode 26 = e E eacute Eacute
+keycode 30 = u U uacute Uacute
+keycode 32 = o O oacute Oacute
+! keycode 31 = i I i I
+keycode 31 = i I iacute Iacute
+keycode 57 = n N ntilde Ntilde
+
+keycode 41 = f F End
+keycode 54 = c C Begin
