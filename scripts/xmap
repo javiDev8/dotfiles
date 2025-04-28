@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [[ $1 = "a" ]]; then
+	/usr/bin/xmodmap /home/jdev/.XmodAmap
+else
+	/usr/bin/xmodmap /home/jdev/.Xmodmap
+fi
+
+exit 0

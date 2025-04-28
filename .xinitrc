@@ -7,5 +7,5 @@ redshift -P -O 6000
 
 exec 
     dwm &
-    st -e sh -c 'neofetch; zsh' &
+    st -e sh -c 'fetch -y 11 -x 48; zsh' &
     /home/jdev/suckless/dwm/time.sh

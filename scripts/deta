@@ -1,0 +1,6 @@
+#!/bin/sh
+st -e sh -c 'nvim /home/jdev/dev/flutter/deta/lib; zsh' &
+sleep 0.02;
+st -e sh -c 'cd /home/jdev/dev/flutter/deta/; zsh' &
+sleep 0.02;
+st -e sh -c 'cd /home/jdev/dev/flutter/deta/; zsh' &

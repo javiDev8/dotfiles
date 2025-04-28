@@ -1,0 +1,33 @@
+#!/bin/bash
+y=0
+x=0
+output_file="nf-tmp.txt"
+
+while getopts "x:y:" opt; do
+  case "$opt" in
+    x)
+      x="$OPTARG"
+      ;;
+    y)
+      y="$OPTARG"
+      ;;
+  esac
+done
+
+for i in $(seq 1 $((y+2))); do
+  echo ""
+done
+
+neofetch > "$output_file"
+
+while IFS= read -r line; do
+  printf "%*s%s\n" "$x" " " "$line"
+done < "$output_file"
+
+for i in $(seq 1 $((y-2))); do
+  echo ""
+done
+
+rm "$output_file"
+
+tput cvvis 

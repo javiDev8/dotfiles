@@ -1,0 +1,5 @@
+echo 'ExecStart=-/sbin/agetty -o '-p jdev' --noreset --noclear --skip-login - ${TERM}'
+
+@TODO pipe
+
+file: /etc/systemd/system/getty.target.wants/getty@tty1.service
